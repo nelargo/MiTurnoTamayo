@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:background="#ff1884d0"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado de la Cola"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="156"
+            android:id="@+id/mQueue"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:textSize="72sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:background="#2196F3"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Su Número"
+            android:id="@+id/mNumeroTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="204"
+            android:id="@+id/mNumero"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:textSize="72sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOLICITAR"
+            android:id="@+id/solicitar"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:id="@+id/mEliminar"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:gravity="top"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:background="#2196F3"
+        android:paddingTop="25dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo Promedio Atención: "
+            android:id="@+id/textView12"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 min/persona"
+            android:id="@+id/mMean"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Último Número Entregado:"
+            android:id="@+id/textView14"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="204"
+            android:id="@+id/mLast"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo Aproximado de Espera:"
+            android:id="@+id/textView16"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="188 min"
+            android:id="@+id/mWait"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>
