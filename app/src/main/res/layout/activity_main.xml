@@ -23,7 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="156"
             android:id="@+id/mQueue"
             android:layout_gravity="center_vertical"
             android:gravity="center_horizontal"
@@ -66,7 +65,10 @@
             android:layout_height="wrap_content"
             android:text="SOLICITAR"
             android:id="@+id/solicitar"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
 
         <Button
             android:layout_width="wrap_content"
@@ -74,7 +76,10 @@
             android:text="Eliminar"
             android:id="@+id/mEliminar"
             android:layout_gravity="center_horizontal"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:background="@drawable/custom_button" />
     </LinearLayout>
 
     <LinearLayout
@@ -91,7 +96,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tiempo Promedio Atención: "
+            android:text="Tiempo Promedio Atención (minutos): "
             android:id="@+id/textView12"
             android:textStyle="bold"
             android:textColor="@android:color/white"
@@ -100,12 +105,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4 min/persona"
             android:id="@+id/mMean"
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:textSize="18dp"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:text="-" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -120,17 +125,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="204"
             android:id="@+id/mLast"
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:textSize="18dp"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:text="-" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tiempo Aproximado de Espera:"
+            android:text="Tiempo Aproximado de Espera (minutos):"
             android:id="@+id/textView16"
             android:textStyle="bold"
             android:textColor="@android:color/white"
@@ -140,12 +145,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="188 min"
             android:id="@+id/mWait"
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:textSize="18dp"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:text="-" />
     </LinearLayout>
 
 </LinearLayout>

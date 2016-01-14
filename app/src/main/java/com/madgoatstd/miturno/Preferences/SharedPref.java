@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 public class SharedPref {
     public static String NAME = "MITURNO";
     public static String CAMPO_MIQUEUE = "mi_queue";
+    public static String CAMPO_NOTIFICACIONES = "notificaciones";
 
 
     Context mContext;
@@ -28,6 +29,16 @@ public class SharedPref {
 
     public int getInt(String KEY){
         int value = sh.getInt(KEY, -1);
+        return value;
+    }
+    public void putBool(String KEY, boolean data){
+        SharedPreferences.Editor e = sh.edit();
+        e.putBoolean(KEY, data);
+        e.apply();
+    }
+
+    public boolean getBool(String KEY){
+        boolean value = sh.getBoolean(KEY, false);
         return value;
     }
 
